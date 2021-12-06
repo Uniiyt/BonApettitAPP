@@ -1,8 +1,10 @@
 
 
-# BonAppetitApp!
+# Bon-Appetit!
 
-![Preview-Screens](https://github.com/Uniiyt/BonApettitAPP/blob/main/default.png)
+![Preview-Screens](https://github.com/steniowagner/bon-appetit-app/blob/master/images/default.png)
+
+If you want to take a look on all screens of the App, they are [here](https://github.com/steniowagner/bon-appetit-app/tree/master/images).
 
 ## About this Project
 
@@ -12,14 +14,15 @@ _"Show differents options of restaurants, dishes and gastronomic events in the c
 
 **PS:** There's a big market behind this context, and that can be extended to other areas (like music, parties, etc), and I'll be so glad if you could find any idea based on this project to build your own business!
 
+**On the Media 🤩:** An [interview](https://madewithreactnative.com/bon-appetit/) about this app.
 
 ## Why?
 
 This project is part of my personal portfolio, so, I'll be happy if you could provide me any feedback about the project, code, structure or anything that you can report that could make me a better developer!
 
-Email-me: juuliamendesss@gmail.com
+Email-me: stenio.wagner1@gmail.com
 
-Connect with me at [LinkedIn](https://www.linkedin.com/in/julia-mendes-041b08217/).
+Connect with me at [LinkedIn](https://www.linkedin.com/in/steniowagner/)
 
 Also, you can use this Project as you wish, be for study, be for make improvements or earn money with it!
 
@@ -27,11 +30,11 @@ It's free!
 
 ## Some Observations about this App
 
-1 - All the data abount dishes, gastronomic events and restaurants that is showed in the App are mocked by me, and they don't exists in the real world.
+1 - All the data abount dishes, gastronomic events and restaurants that is showed in the App are mocked by me, and they don't exists in the real world. The files that contains all data that it's displayed in the App are stored on the [back-end of the app](https://github.com/steniowagner/bon-appetit-server/tree/master/src/json-models).
 
-2 - The current-user-location that is showed by the App is also mocked. All the locations are static 
+2 - The current-user-location that is showed by the App is also mocked. All the locations are static and provided by the [back-end of the app](https://github.com/steniowagner/bon-appetit-server) in [this file](https://github.com/steniowagner/bon-appetit-server/blob/master/src/utils/get-user-location.js).
 
-3 - If you're running the App in an Android device (physical or virtual), you'll need to have an Google Maps key to see the Map in _Near Me_ screen and in _Restaurant Address_ Screen.
+3 - If you're running the App in an Android device (physical or virtual), you'll need to have an Google Maps key to see the Map in _Near Me_ screen and in _Restaurant Address_ Screen. To active your key, follow [this tutorial](https://developers.google.com/maps/documentation/android-sdk/signup). Those Screens will works properly on iOS by default.
 
 4 - There's no functionality of Login/Register, the buttons and the forms in the Login Screen are only for UI matters.
 
@@ -67,18 +70,18 @@ iOS .ipa installer: Soon!
 
 ### Prerequisites
 
-To run this project in the development mode, you'll need to have a basic environment to run a React-Native App.
+To run this project in the development mode, you'll need to have a basic environment to run a React-Native App, that can be found [here](https://facebook.github.io/react-native/docs/getting-started).
 
-Also, you'll need to the server running locally on your machine with the mock data.
+Also, you'll need to the server running locally on your machine with the mock data. You can find the server and all the instructions to start the server [here](https://github.com/steniowagner/bon-appetit-server).
 
 ### Installing
 
 **Cloning the Repository**
 
 ```
-$ https://github.com/uniiyt/BonAppetitApp
+$ https://github.com/steniowagner/bon-appetit-app
 
-$ cd BonAppetitApp
+$ cd bon-appetit-app
 ```
 
 **Installing dependencies**
@@ -93,6 +96,19 @@ _or_
 $ npm install
 ```
 
+### Connecting the App with the Server
+
+1 - Follow the instructions on the [bon-appetit-server](https://github.com/steniowagner/bon-appetit-server) to have the server running on your machine.
+
+2 - With the server up and running, go to the [src/service/api.js](https://github.com/steniowagner/bon-appetit-app/blob/master/src/services/api.js) file and edit the value of the field _baseURL_ (line 4) with the IP of your machine (you can have some issues with _localhost_ if you're running on an android physical device, but you can use localhost safely on iOS).
+
+3 - Pay attention with the server address in [src/service/api.js](https://github.com/steniowagner/bon-appetit-app/blob/master/src/services/api.js) file! It should looks like this:
+
+_http://< IP of your machine >:3001/bon-appetit/api/v1_ 
+
+*or*
+
+_http:// localhost:3001/bon-appetit/api/v1_
 
 ### Running
 
@@ -146,8 +162,12 @@ $ react-native run-ios
 
 You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
 
-Email-me: juuliamendesss@gmail.com
+Email-me: stenio.wagner1@gmail.com
 
-Connect with me at [LinkedIn](https://www.linkedin.com/in/julia-mendes-041b08217/).
+Connect with me at [LinkedIn](https://www.linkedin.com/in/steniowagner/)
 
 Thank you!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/steniowagner/bon-appetit-app/blob/master/LICENSE) file for details
