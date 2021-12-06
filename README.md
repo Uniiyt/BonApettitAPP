@@ -2,7 +2,7 @@
 
 # BonAppetitApp!
 
-![Preview-Screens](https://github.com/uniiyt/BonAppetitAPP/blob/master/default.png)
+![Preview-Screens](https://github.com/Uniiyt/BonApettitAPP/blob/main/default.png)
 
 ## About this Project
 
